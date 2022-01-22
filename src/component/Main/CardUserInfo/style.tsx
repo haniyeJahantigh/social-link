@@ -16,7 +16,7 @@ userInfo:{
     alignItems: "center",
     alignContent: "center",
     justifyContent: "space-between",
-    margin:"0 5px"
+    margin:"0 8px"
 },
 userId:{
     direction:"ltr",
@@ -34,14 +34,13 @@ editDeletBtn:{
     alignContent: "center",
     justifyContent: "space-between",
 },
-deleteBtn:{
-   color:'#f44336',
-   cursor:"pointer",
-   marginLeft:"5px"
-},
 editBtn:{
     color:"#ffcf33",
     cursor:"pointer",
     marginLeft:"10px"
-}
+},
+dialog:{
+backgroundColor:"#171d29",
+color:"#fff",
+},
 }))

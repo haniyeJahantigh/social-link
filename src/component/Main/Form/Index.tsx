@@ -30,17 +30,14 @@ const socialmedia = [
       label: 'وبسایت',
     },
   ];
+
 type Props = {
     setEdit?:any,
     edit?: boolean,
     setExpanded?: any,
     editData:any,
-
 };
-
 const Index = ({setEdit,edit,setExpanded,editData}: Props) => {
-    const [social, setSocial] =useState<string>('');
-    const [user, setUser] =useState<any>();
     const [updateListData, setUpdateListData] =useState<boolean>(false);
     const classes = useStyles();
     const handleCancle=()=>{
@@ -95,7 +92,11 @@ const Index = ({setEdit,edit,setExpanded,editData}: Props) => {
             </div>
             <div className={classes.FormBtn}>
                 <Button variant="outlined" color="inherit" onClick={handleCancle}> انصراف</Button>
-                <Button  type="submit" sx={{backgroundColor:"#ffcf33",mr:1,fontFamily:"iransans"}} className={classes.okBtn}> {edit ? "ویرایش مسیر ارتباطی" : "افزودن مسیر ارتباطی"}</Button>
+                <Button  type="submit"
+                         sx={{backgroundColor:"#ffcf33",mr:1,fontFamily:"iransans", fontSize:"10px",boxShadow:"0px 10px 33px -7px rgba(255,207,51,0.44)" ,color:"#191919", ":hover":{backgroundColor:"#bc7123"}}} 
+                         className={classes.okBtn}> 
+                         {edit ? "ویرایش مسیر ارتباطی" : "افزودن مسیر ارتباطی"}
+                </Button>
 
             </div>
         </form>
